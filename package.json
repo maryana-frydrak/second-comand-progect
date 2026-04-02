@@ -5,8 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/
-second-comand-progect/",
+    "build": "vite build --base=/second-comand-progect/",
     "preview": "vite preview"
   },
   "devDependencies": {
