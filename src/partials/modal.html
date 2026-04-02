@@ -1,0 +1,58 @@
+<div class="backdrop is-hidden" id="modal-backdrop">
+  <div class="modal">
+    <button type="button" class="close-btn" id="modal-close"></button>
+    <div id="modal-content">
+      <div class="product-modal">
+        <div class="product-gallery">
+          <img src="${images[0]}" class="main-img" alt="${name}" />
+          <div class="thumb-list">
+            <img src="${images[1]}" class="thumb" />
+            <img src="${images[2]}" class="thumb" />
+          </div>
+        </div>
+
+        <div class="product-info">
+          <h2 class="product-title">${name}</h2>
+          <p class="category">${category}</p>
+          <p class="price">${price}</p>
+          <div class="rating">зірочки</div>
+          <p class="description">${description}</p>
+          <button class="order-btn" data-id="${id}">
+            Перейти до замовлення
+          </button>
+        </div>
+      </div>
+
+      <div class="order-form-container">
+        <h2 class="order-title">Замовити</h2>
+        <form id="order-form" class="order-form">
+          <div class="form-group">
+            <label for="user-name">Ім'я</label>
+            <input
+              type="text"
+              id="user-name"
+              name="name"
+              required
+              placeholder=""
+            />
+          </div>
+          <div class="form-group">
+            <label for="user-phone">Телефон</label>
+            <input
+              type="tel"
+              id="user-phone"
+              name="phone"
+              required
+              placeholder=""
+            />
+          </div>
+          <div class="form-group">
+            <label for="user-comment">Коментар</label>
+            <textarea id="user-comment" name="comment" rows="3"></textarea>
+            <button type="submit" class="submit-btn">Надіслати заявку</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
