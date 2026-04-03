@@ -24,6 +24,10 @@
   border-radius: 4px;
   max-width: 800px;
   width: 90%;
+
+  min-height: auto;
+  max-height: 90vh; /*обмежує максимальну висоту*/
+  overflow-y: auto; /*дозволяє внутрішню прокрутку*/
 }
 
 .close-btn {
